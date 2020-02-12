@@ -4,6 +4,7 @@ server.on("request", (request, response) => {
     var body = [];
     request.on("data", chunk => {
         body.push(chunk);
+        body.push(chunk);
     });
     request
         .on("end", () => {
